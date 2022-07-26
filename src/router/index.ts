@@ -29,6 +29,14 @@ const router = createRouter({
             title: "设置",
           },
         },
+        {
+          path: "/gocq/binfile",
+          name: "bin-file-manage",
+          component: () => import("../views/GocqViews/BinFileManageView.vue"),
+          meta: {
+            title: "二进制文件管理",
+          },
+        },
       ],
     },
     {

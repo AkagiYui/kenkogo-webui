@@ -3,7 +3,13 @@ import { NMenu, NIcon } from "naive-ui";
 import { h, type Component } from "vue";
 import type { MenuOption } from "naive-ui";
 import { RouterLink, useRoute } from "vue-router";
-import { Settings24Regular, Home24Regular } from "@vicons/fluent";
+import {
+  Settings24Regular,
+  Home24Regular,
+  Bot24Regular,
+  ScanObject24Regular,
+} from "@vicons/fluent";
+import { FileDigit, BrandPython } from "@vicons/tabler";
 const route = useRoute();
 const props = defineProps({
   collapsed: {
@@ -42,6 +48,40 @@ const menuOptions: MenuOption[] = [
         marginLeft: "32px",
       },
     },
+  },
+  {
+    label: "go-cqhttp 管理",
+    key: "gocq-manage",
+    icon: renderIcon(Bot24Regular),
+    children: [
+      {
+        label: () =>
+          h(
+            RouterLink,
+            {
+              to: {
+                name: "bin-file-manage",
+                params: {
+                  lang: "zh-CN",
+                },
+              },
+            },
+            { default: () => "二进制文件管理" }
+          ),
+        key: "bin-file-manage",
+        icon: renderIcon(FileDigit),
+      },
+      {
+        label: "实例管理",
+        key: "instance-manage",
+        icon: renderIcon(ScanObject24Regular),
+      },
+    ],
+  },
+  {
+    label: "Python 管理",
+    key: "script-manage",
+    icon: renderIcon(BrandPython),
   },
   {
     label: () =>

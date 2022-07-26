@@ -29,7 +29,7 @@ function resetData() {
     <NCard title="服务器配置">
       <NSpace vertical>
         <NInputGroup>
-          <NInputGroupLabel>服务器地址</NInputGroupLabel>
+          <NInputGroupLabel>地址</NInputGroupLabel>
           <NInput placeholder="localhost" v-model:value="data.host" />
         </NInputGroup>
         <NInputGroup>

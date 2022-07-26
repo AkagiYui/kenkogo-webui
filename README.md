@@ -46,6 +46,7 @@ NodeJS: [v16.15.1](https://nodejs.org/zh-cn/) [下载地址](https://nodejs.org/
 - [pinia-plugin-persistedstate ^1.6.3](https://github.com/prazdevs/pinia-plugin-persistedstate) Pinia 持久化插件
 - [@vicons/fluent ^0.12.0](https://www.xicons.org/) 图标库
 - [@vicons/ionicons5 ^0.12.0](https://www.xicons.org/) 图标库
+- [@vicons/tabler ^0.12.0](https://www.xicons.org/) 图标库
 
 - [vue-clipboard3 2.0.0](https://github.com/JamieCurnow/vue-clipboard3) 剪贴板操作
 - [qrcode.vue ^3.3.3](https://github.com/scopewu/qrcode.vue) 二维码生成组件

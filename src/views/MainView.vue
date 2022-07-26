@@ -8,8 +8,8 @@ import {
   NScrollbar,
 } from "naive-ui";
 import TopBar from "@/components/TopBar.vue";
-import { useDataStore } from "@/stores/data";
 import LeftSider from "@/components/LeftSider.vue";
+import { useDataStore } from "@/stores/data";
 const data = useDataStore();
 </script>
 
